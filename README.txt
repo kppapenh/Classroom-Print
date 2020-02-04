@@ -8,3 +8,5 @@ Prior to this application, staff would have to open
 each individual document and select print on each
 of them. This can become cumbersome when
 printing more than a few document..
+
+This is a GUI based application with a .PDF of directions built in
