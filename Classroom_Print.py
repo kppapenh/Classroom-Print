@@ -271,14 +271,14 @@ def usage():
     msg['Subject'] = os.environ['COMPUTERNAME']
 
 
-    sender ="classroomprint@saratogaschools.org"
-    receiver= "classroomprint@saratogaschools.org"
+    sender ="Usage_traking_email@domain.org"
+    receiver= "Usage_traking_email@domain.org"
     #print(content)
     try:
         mailserver = smtplib.SMTP('smtp.office365.com',587)
         mailserver.ehlo()
         mailserver.starttls()
-        mailserver.login(sender, 'Printcl@ssroom!')
+        mailserver.login(sender, 'password')
         mailserver.sendmail(sender, receiver, msg.as_string())
         mailserver.quit()  
     except:
